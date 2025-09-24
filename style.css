@@ -1,27 +1,18 @@
+/* Fondo con un degradado */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
-  text-align: center;
-  padding: 50px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f8fafc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  color: #333;
+/* Tarjetas (los botones que llevan a Zabbix, Grafana, etc.) */
+a {
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 15px 25px;
-  margin: 10px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-button:hover {
-  background-color: #45a049;
-  transform: scale(1.05);
+a:hover {
+  border-color: #38bdf8; /* azul Tailwind (cyan-400) */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
 }
